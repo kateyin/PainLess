@@ -1,0 +1,32 @@
+<ion-view view-title="User Defined" cache-view="false">
+	<ion-content class="padding" scroll="true">
+		<div class="fill-width-or-more">            
+            <div class="fill-width-or-more list card" style="flex:300; text-align:center;background-color: lightblue;">
+				<h4 class="title">How was {{values.UserDefinedTask}} <br> in the last 24 hours?</h4>
+                		<div class="fill-width-or-more item item-body " style="flex:1; overflow-x:hidden;">
+                                <output style="font-size:24pt; height: 24pt;">Baseline: {{values.BaseUserDefined}}</output>
+                    	<div style="flex:1; background:transparent; ">
+                             <div class="inline"> 
+                                 <br>
+                                 <br>
+                         <h3 style="font-size: 22px; padding:20px;">Got</h3>
+                    <label class="item item-input">
+                        <input style="font-size: 22px;" type="number" ng-init="values.BaseUserDefined" ng-model="values.UserDefined" >
+                        </input>
+                        </label>
+                        <h3 style="font-size: 22px; padding:20px;">{{values.UserDefinedUnit}} of {{values.UserDefinedTask}} done!</h3>
+                            </div>
+				 </div> 
+                	<div>
+						<a class="button button-positive button-small" style="float:right;font-size: small;" ng-click="addDetails('UserDefinedDetails', 'UserDefinedNextButton')">Add notes</a>
+					</div>
+                            </div> 
+				</div>
+            
+            <div class="button-bar">
+				<a href="#/questions/mood" class="button icon-left ion-chevron-left button-clear button-positive">Back</a>
+				<a href="#/Initial" class="button icon-right ion-chevron-right button-balanced" ng-click="save()" id="userDefinedNextButton">Save</a>
+		</div>
+          </div>
+	</ion-content>
+</ion-view>

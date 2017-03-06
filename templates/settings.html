@@ -1,0 +1,40 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <div class="card">
+      <!-- <ion-toggle ng-model="settings.winHealthHack" ng-click="winHealthHackChanged()">
+        Win Health Hack
+      </ion-toggle> -->
+      <ion-toggle ng-model="settings.enableNotifications" ng-click="toggleNotifications()">
+        Enable Reminder for Recording
+      </ion-toggle>
+      <label class="item item-input" ng-show="settings.enableNotifications">
+        <span class="input-label">Reminder Time</span>
+        <input type="time" ng-model="settings.notificationTime" ng-blur="notificationTimeChanged()">
+      </label>
+      <label class="item item-input" ng-show="settings.enableNotifications">
+        <span class="input-label">Frequency (hours)</span>
+        <input type="number" ng-model="settings.notificationFrequency" ng-blur="notificationTimeChanged()">
+      </label>
+      </div>
+      
+      <div class="card">
+      <div class="button-bar">
+        <button class="button button-positive" ng-click="loadShelly()">
+          Load Sample Data Set
+        </button>
+      </div>
+      </div>
+      
+      <div class="card">
+      <div class="button-bar">
+        <button class="button button-assertive" ng-click="clearAllData()">
+          Clear All Data
+        </button>
+      </div>
+      </div>
+
+      
+						<a class="button button-large button-positive" style="font-size: regular;" href="#/initial">Back</a>
+					</div>
+  </ion-content>
+</ion-view>

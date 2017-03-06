@@ -1,0 +1,132 @@
+.range-horizontall {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform:  rotate(-90deg);
+}
+
+.fill-width-or-more {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-calendar .month {
+  background-color: #ef473a
+}
+
+.flex-calendar .week {
+  background-color: #F26C61;
+}
+
+#card-red {
+    text-align: center;
+    background-color: #ef473a
+}
+
+#card-blue {
+    text-align: center;
+    background-color: #387ef5
+}
+
+#card-yellow {
+    text-align: center;
+    background-color: #ffc900
+}
+
+.flip-vertical {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: flipv; /*IE*/
+    filter: flipv;
+}
+
+.first-button {
+	text-decoration: none;
+	width:80%;
+	font-size: 2.25em;
+	color: #FFFFFF !important;
+	padding: 5px;
+	background-color:#240EB1 !important;
+}
+
+.nyafirst-button {
+	text-decoration: none;
+	width:80%;
+	font-size: 2.25em;
+	color: #b8c3c4 !important;
+	padding: 5px;
+	background-color:#0f5c94 !important;
+}
+
+.first-button:hover{
+    color: #FFFFFF !important
+}
+
+.first-button:active{
+    color: #FFFFFF !important
+}
+
+.large-words {
+	font-size: 1em;
+}
+
+.medium-words {
+    font-size: 25px;
+}
+
+.jacaranda {
+    background: url("../img/Jacaranda.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; 
+    -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
+}
+
+.test-button {
+	text-decoration: none;
+    width: 40%;
+    font-size: 20px;
+	color: #FFFFFF!important;
+	background-color:#240EB1 !important;
+}
+
+.test-button-bar {
+    background: transparent;
+}
+
+.nyatest-button {
+	text-decoration: none;
+	background-color: #FFFFFF!important;
+}
+
+.test-background {
+    background: url("../img/Clouds4.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: cover; 
+  -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
+}
+
+.range-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.lilac-background{
+    background-color: blueviolet;
+}
+
+.range-flexible{
+    flex-grow: 1;
+    flex-basis: 50%;
+}

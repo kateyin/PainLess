@@ -1,0 +1,37 @@
+<ion-view view-title="User Defined" cache-view="false">
+	<ion-content class="padding" scroll="true">
+		<div class="fill-width-or-more">
+            <div class="fill-width-or-more list card" style="flex:300; text-align:center;background-color: lightblue;" scroll="true">
+				<h4 class="title">We can track an activity <br>that relates to your daily life!<br></h4>
+				<div class="fill-width-or-more item item-body test-background" style="flex:1; overflow-x:hidden;" scroll="true">
+                    	<div style="flex:1; background:transparent; ">
+                        <div class="inline"> 
+                    <h3 style="font-size: 22px; padding:20px;">How many</h3>
+                    <label class="item item-input">
+                    <input class="block" style="font-size: 22px;"  type="text" placeholder="An unit eg. Hours," maxlength = 200 ng-model="values.UserDefinedUnit" required>
+                    </input>
+                    </label>
+                    <h3 style="font-size: 22px;padding:5px;">of </h3>
+                    
+                    <label class="item item-input">
+                    <input class="block" style="font-size: 22px;" type="text" placeholder="A task eg. Jogging" ng-model="values.UserDefinedTask" required>
+                    </input>
+                    </label>
+                   
+<h3 style="font-size: 22px;padding:10px;">can you accomplish on a ordinary day?</h3>
+    <label class="item item-input">
+    <input style="font-size: 22px;" type="number" placeholder="A number eg. 2" ng-model="values.BaseUserDefined" >
+     </input>
+    </label>
+</div>     
+</div>    
+</div>
+		
+</div>
+            <div class="button-bar">
+				<a href="#/baseline/mood" class="button icon-left ion-chevron-left button-clear button-positive outline">Back</a>
+				<a href="#/initial" class="button icon-right ion-chevron-right button-balanced" ng-click="Basesave()" id="userDefinedNextButton">Save</a>
+                </div>
+		</div>
+	</ion-content>
+</ion-view>

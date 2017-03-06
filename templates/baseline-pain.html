@@ -1,0 +1,21 @@
+<ion-view view-title="Baseline pain data" cache-view="false">
+	<ion-content class="padding" scroll="false">
+		<div class="fill-width-or-more">
+			<div class="fill-width-or-more list card" style="flex:300; text-align:center; background-color: lightblue">
+				<h4 class="title">How is your pain on<br> an ordinary day?</h4>
+				<div class="fill-width-or-more item item-body" style="flex:1; overflow-x:hidden;">
+					<output style="font-size:24pt; height: 24pt;">{{values.Basepain}}</output>     
+					<div style="padding-left:50%; flex:1;">
+						<div class="item range range-positive range-horizontal" style="border: none; font-size:24pt;"><i class="glyphicon glyphicon-heart"></i>
+							<input type="range" min="0" max="10" step="1" ng-model="values.Basepain" /> <i class="icon ion-medkit" style="font-size:24pt;"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button-bar">
+				<a href="#/first-time" class="button icon-left ion-chevron-left button-clear button-positive">Back</a>
+				<a href="#/baseline/activity" class="button icon-right ion-chevron-right button-balanced" ng-click="saveBase()" id="BasePainNextButton">Next</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

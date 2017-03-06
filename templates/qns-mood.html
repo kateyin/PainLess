@@ -1,0 +1,28 @@
+<ion-view view-title="Mood" cache-view="false">
+	<ion-content class="padding" scroll="false">
+		<div class="fill-width-or-more">
+			<div class="fill-width-or-more list card" style="flex:300; text-align:center;background-color: lightblue">
+        <h4 class="title">How are you feeling <br> in the last 24 hours?</h4>
+				<div class="fill-width-or-more item item-body" style="flex:1; overflow-x:hidden;">
+					<output style="font-size:20pt; height: 24pt;">Baseline: {{values.Basemood}}</output>
+                    <div class="range-container" style="padding-left:30%; padding-right:5%;flex:inherit;">
+						<div class="item range range-positive range-flexible range-horizontal" style="font-size:24pt;">
+							<i class="icon ion-sad-outline" style="font-size:28pt;"></i> 
+                            <input type="range" min="0" max="10" step="1" ng-init="values.Basemood" ng-model="values.mood"/><i class="icon ion-happy-outline" style="font-size:28pt;"></i>
+						</div>
+					</div>
+                     <output style="font-size:20pt;">Today: {{values.mood}}</output>
+					
+					<div>
+						<a class="button button-positive button-small" style="float:right; font-size: small;" ng-click="addDetails('moodDetails', 'moodNextButton')">Add notes</a>
+					</div>
+				</div>
+			</div>
+            
+            <div class="button-bar">
+				<a href="#/questions/activity" class="button icon-left ion-chevron-left button-clear button-positive">Back</a>
+				<a href="#/questions/userDefined" class="button icon-right ion-chevron-right button-balanced" ng-click= "save()" id="moodNextButton">Next</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

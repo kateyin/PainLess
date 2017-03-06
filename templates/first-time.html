@@ -1,0 +1,55 @@
+<ion-view view-title="Baseline setup" cache-view="false">
+  <ion-content class="padding test-background" has-header="false" scroll="true">
+  <h3 id="register-heading1" style="color: #FFFFFF">What you would like to be called?</h3><h5 style="color: #FFFFFF">  * required</h5>
+  <div class="list list-inset">
+    <label class="item item-input">
+     <input type="text" placeholder="Username" ng-model="values.username" required>
+     </input>
+    </label>
+ </div>
+
+<div class="list">
+  <h3 style="color: #FFFFFF">What do you consider to be your gender?</h3>
+  <label class="item item-radio" ng-model="values.usergender" value="">
+    <ion-radio ng-value="Male">Male</ion-radio>
+    <i class="radio-icon ion-checkmark"></i>
+    <ion-radio ng-value="Female">Female</ion-radio>
+    <i class="radio-icon ion-checkmark"></i>
+    <ion-radio ng-value="Other">Other</ion-radio>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<h3 style="color: #FFFFFF">What is your age?</h3>
+  <div class="list list-inset">
+    <label class="item item-input">
+     <input type="number" placeholder="20" ng-model="values.userage" >
+    </input>
+   </label>
+ </div>
+
+ <h3 style="color: #FFFFFF">Please list any diagnosed medical conditions causing you pain</h3><h5 style="color: #FFFFFF">  Please separate each condition with a commma</h5>
+  <div class="list list-inset">
+    <label class="item item-input" >
+     <input type="text" placeholder="eg. arthritis," ng-model="values.usermedicalcondition">
+    </label>
+   </label>
+ </div>
+
+ <h3 style="color: #FFFFFF">Please list any pain medications that you take regularly</h3><h5 style="color: #FFFFFF">  Please separate each condition with a commma</h5>
+  <div class="list list-inset">
+    <label class="item item-input">
+     <input type="text" placeholder="eg. paracetamol," maxlength = 200 ng-model="values.userdrug">
+    </label>
+   </label>
+ </div>
+
+
+<div class="button-bar test-button-bar">
+	<a href="#/initial" class="button button-clear button-positive nyatest-button icon-left ion-chevron-left">
+        Back</a>
+ <a href="#/baseline/pain" id="baseline pain" class="button button-balanced icon-right ion-chevron-right" ng-click="save()">
+     Continue</a>
+</div>
+  </ion-content>
+</ion-view>
